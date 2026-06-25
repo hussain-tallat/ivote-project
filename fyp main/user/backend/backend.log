@@ -1,0 +1,23 @@
+
+> ivotepk-backend@1.0.0 start
+> node server.js
+
+
+╔═══════════════════════════════════════════════════════╗
+║                                                       ║
+║         iVotePK - Intelligent Voting System          ║
+║                                                       ║
+║  Server running on port 5000                         ║
+║  Environment: development                      ║
+║                                                       ║
+║  API Endpoints:                                       ║
+║  - Auth:       /api/auth                             ║
+║  - Vote:       /api/vote                             ║
+║  - Public:     /api/public                           ║
+║  - Admin:      /api/admin                            ║
+║                                                       ║
+║  Socket.IO: Real-time analytics enabled              ║
+║                                                       ║
+╚═══════════════════════════════════════════════════════╝
+  
+MongoDB Connected: ac-ykuxanr-shard-00-02.qlovyqz.mongodb.net

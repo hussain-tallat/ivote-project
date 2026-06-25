@@ -1,0 +1,353 @@
+/* Pakistan History Page Styles */
+.pakistan-history-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fbfa 0%, #edf5f4 100%);
+}
+
+/* Hero Section */
+.history-hero {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.history-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 86, 59, 0.6));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.history-hero-overlay h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.8s ease-out;
+}
+
+.history-hero-overlay p {
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation */
+.history-nav {
+  background: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.btn-back-home,
+.btn-back-home-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00563B 0%, #0f766e 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 86, 59, 0.2);
+}
+
+.btn-back-home:hover,
+.btn-back-home-footer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 86, 59, 0.3);
+  background: linear-gradient(135deg, #0f3d2a 0%, #063d33 100%);
+}
+
+/* Main Content */
+.history-content {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* History Era Sections */
+.history-era {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #00563B;
+  transition: all 0.3s ease;
+}
+
+.history-era:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.era-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.era-header h2 {
+  font-size: 1.8rem;
+  color: #00563B;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.era-year {
+  background: linear-gradient(135deg, #00563B, #0f766e);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  margin-left: 2rem;
+}
+
+/* Timeline List */
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-list li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, rgba(0, 86, 59, 0.04) 0%, rgba(15, 118, 110, 0.04) 100%);
+  border-radius: 12px;
+  border-left: 4px solid #0f766e;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #1e293b;
+  transition: all 0.3s ease;
+}
+
+.timeline-list li:hover {
+  background: linear-gradient(135deg, rgba(0, 86, 59, 0.08) 0%, rgba(15, 118, 110, 0.08) 100%);
+  border-left-color: #00563B;
+  transform: translateX(8px);
+}
+
+.timeline-list strong {
+  color: #00563B;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 80px;
+}
+
+/* Prime Ministers Section */
+.history-pm-section {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.history-pm-section h2 {
+  color: #00563B;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pm-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.pm-table thead {
+  background: linear-gradient(135deg, #00563B 0%, #0f766e 100%);
+  color: white;
+}
+
+.pm-table th {
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pm-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+}
+
+.pm-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.pm-table tbody tr:hover {
+  background: rgba(0, 86, 59, 0.04);
+}
+
+.pm-table tbody tr:nth-child(odd) {
+  background: rgba(15, 118, 110, 0.02);
+}
+
+.pm-table tr.current-pm {
+  background: linear-gradient(135deg, rgba(0, 86, 59, 0.12), rgba(15, 118, 110, 0.08));
+  font-weight: 700;
+}
+
+.pm-table tr.current-pm td {
+  color: #00563B;
+  border-top: 2px solid #00563B;
+  border-bottom: 2px solid #00563B;
+}
+
+/* Footer */
+.history-footer {
+  background: linear-gradient(135deg, #00563B 0%, #0f766e 100%);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-back-home-footer {
+  background: white;
+  color: #00563B;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.btn-back-home-footer:hover {
+  background: #f0f9f9;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+  color: #0f3d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .history-hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .era-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .era-year {
+    margin-left: 0;
+  }
+
+  .history-era {
+    padding: 1.5rem;
+  }
+
+  .history-content {
+    padding: 0 1rem;
+  }
+
+  .pm-table {
+    font-size: 0.85rem;
+  }
+
+  .pm-table th,
+  .pm-table td {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-hero {
+    height: 300px;
+  }
+
+  .history-hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .history-era {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .era-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-list li {
+    padding: 1rem;
+  }
+
+  .btn-back-home,
+  .btn-back-home-footer {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
